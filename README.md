@@ -2,10 +2,15 @@
 ---
 박종찬, 박찬웅
 ---
-(Erased)
-Day 01 Design
-Day 02 Detail Design
-Day 03 player move 
-Day 04 Test Enemy, skills
+
+Erased by Error
+---
+
+Day 01 Design<br>
+Day 02 Detail Design<br>
+Day 03 player move<br>
+Day 04 Test Enemy, skills<br>
+
+Accessible
 ---
 Day 05 Finisher, UI
