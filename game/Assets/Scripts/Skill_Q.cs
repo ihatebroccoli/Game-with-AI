@@ -82,27 +82,28 @@ public class Skill_Q : MonoBehaviour
         }
         if (player_is_dead == false)
         {
-            if (Input.GetKeyDown("q") && QReady == true && !player.GetComponent<Bandit>().PILSALING)
-            {
-                OnShooting = true;
-                QReady = false;
-                QCoolDownCounter = QCoolDown;
-
-                //set start point and direction
-                OriginalDirection = sight;
-                transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1.0f);
-                transform.localScale = new Vector3(sight * 2.0f, 2.0f, 1.0f);
-                transform.GetChild(0).gameObject.SetActive(true);
-
-                //Add velocity 
-
-                GetComponent<Rigidbody2D>().AddForce(new Vector2(10.0f * sight, 0), ForceMode2D.Impulse);
-                if (OnShooting)
+            if (!player.GetComponent<Bandit>().PILSALING != false) {
+                if (Input.GetKeyDown("q") && QReady == true)
                 {
-                    Invoke("SkillQ_Off", 2);
+                    OnShooting = true;
+                    QReady = false;
+                    QCoolDownCounter = QCoolDown;
+
+                    //set start point and direction
+                    OriginalDirection = sight;
+                    transform.position = new Vector2(player.transform.position.x, player.transform.position.y + 1.0f);
+                    transform.localScale = new Vector3(sight * 2.0f, 2.0f, 1.0f);
+                    transform.GetChild(0).gameObject.SetActive(true);
+
+                    //Add velocity 
+
+                    GetComponent<Rigidbody2D>().AddForce(new Vector2(10.0f * sight, 0), ForceMode2D.Impulse);
+                    if (OnShooting)
+                    {
+                        Invoke("SkillQ_Off", 2);
+                    }
                 }
             }
-
 
             if (QReady == false)
             {

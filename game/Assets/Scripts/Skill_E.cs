@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Skill_E : MonoBehaviour
@@ -7,6 +8,9 @@ public class Skill_E : MonoBehaviour
     public GameObject animation_object;
 
     public float PilsalDmg;
+    public Image PilsalImage;
+
+
 
     AudioSource clipsound;
     public AudioClip SoundEff;
@@ -34,6 +38,7 @@ public class Skill_E : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PilsalImage.fillAmount = (GetComponent<Bandit>().player_MP) / 100;
         if (Input.GetKeyDown("e") && !GetComponent<Bandit>().isDead && GetComponent<Bandit>().player_MP == 100)
         {
             animation_object.SetActive(true);

@@ -60,24 +60,25 @@ public class Skill_W : MonoBehaviour
             player_is_dead = true;
             SkillW_Off();
         }
-        if(player_is_dead == false && !player.GetComponent<Bandit>().PILSALING)
+        if (player_is_dead == false)
         {
-            
+            if(!player.GetComponent<Bandit>().PILSALING)
+            { 
             //skill 2
-            if (Input.GetKeyDown("w") && WReady == true)
-            {
-                AuraState = true;
-                WReady = false;
-                WCoolDownCounter = WCoolDown;
-                GameObject.Find("AttackRange").GetComponent<Attack>().HitDmg = 2.0f;
+                if (Input.GetKeyDown("w") && WReady == true)
+                {
+                    AuraState = true;
+                    WReady = false;
+                    WCoolDownCounter = WCoolDown;
+                    GameObject.Find("AttackRange").GetComponent<Attack>().HitDmg = 10.0f;
 
-                colorRenderer.material.SetColor("_Color", Color.red);
-                DashColor.startColor = new Color(255, 0, 0);
+                    colorRenderer.material.SetColor("_Color", Color.red);
+                    DashColor.startColor = new Color(255, 0, 0);
 
-                W_animator.SetBool("AuraOn", true);
-                Invoke("SkillW_Off", 5);
+                    W_animator.SetBool("AuraOn", true);
+                    Invoke("SkillW_Off", 5);
+                }
             }
-
             if (WReady == false)
             {
                 WCoolDownCounter -= Time.deltaTime;
