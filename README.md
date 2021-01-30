@@ -14,3 +14,5 @@ Day 04 Test Enemy, skills<br>
 Accessible
 ---
 Day 05 Finisher, UI
+Day 06 Boss, Boss Design
+Day 07 08 Boss Effects and Skills
