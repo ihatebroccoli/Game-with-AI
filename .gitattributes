@@ -1,0 +1,14 @@
+. filter=lfs diff=lfs merge=lfs -text
+.meta filter=lfs diff=lfs merge=lfs -text
+.png filter=lfs diff=lfs merge=lfs -text
+.asset filter=lfs diff=lfs merge=lfs -text
+.anim filter=lfs diff=lfs merge=lfs -text
+.controller filter=lfs diff=lfs merge=lfs -text
+.unity filter=lfs diff=lfs merge=lfs -text
+.unity.meta filter=lfs diff=lfs merge=lfs -text
+.controller.meta filter=lfs diff=lfs merge=lfs -text
+.anim.meta filter=lfs diff=lfs merge=lfs -text
+.asset.meta filter=lfs diff=lfs merge=lfs -text
+.png.meta filter=lfs diff=lfs merge=lfs -text
+.zip filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
