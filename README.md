@@ -21,3 +21,4 @@ Accessible<br>
   - Day 07 08 Boss Effects and Skills<br>  
   - Day 09 Boss Skills(Servants)<br> 
   - Day 10 Boss Skills(Explosion)<br>
+  - Day 11 Boss Skills(Effects)<br>
