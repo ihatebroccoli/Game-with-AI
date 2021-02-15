@@ -22,3 +22,7 @@ Accessible<br>
   - Day 09 Boss Skills(Servants)<br> 
   - Day 10 Boss Skills(Explosion)<br>
   - Day 11 Boss Skills(Effects)<br>
+  - Day 12 Map, Boss<br>
+  - Day 13 Servant Algorithm(Effects)<br>
+  - Day 14,15 Boss pattern<br>
+  - Day 16 Game system Wrap-up<br>
